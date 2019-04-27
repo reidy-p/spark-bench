@@ -35,6 +35,7 @@ object ConfigCreator {
     SQLWorkload,
     Sleep,
     SparkPi,
+    SparkPiConcurrent,
     KMeansDataGen,
     LinearRegressionDataGen,
     GraphDataGen

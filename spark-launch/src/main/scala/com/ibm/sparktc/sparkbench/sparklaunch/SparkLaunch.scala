@@ -28,9 +28,9 @@ import scala.collection.parallel.ForkJoinTaskSupport
 import scala.collection.JavaConverters._
 import scala.util.Try
 
-object SparkLaunch extends App {
+object SparkLaunch {
 
-  override def main(args: Array[String]): Unit = {
+  def main(args: Array[String]): Unit = {
     assert(args.nonEmpty)
     val path = args.head
     val (confSeq: Seq[SparkJobConf], parallel: Boolean) = mkConfs(new File(path))
